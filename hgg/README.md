@@ -10,6 +10,7 @@
 
 ## 编译
 ```sh
+cd js
 tsc hgg.ts -t ES2016
 ```
 
