@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人员管理系统</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/hgg.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <h1>人员管理系统</h1>
+    <!-- {{name}}
+    <input type="text" name="name" placeholder="姓名" h-model="name">
+    <button h-on:click="save">保存</button> -->
+    <div id="app">
+        <!-- <h1>{{appName}}</h1> -->
+        <div>
+            <input type="text" id="name" name="name" placeholder="姓名" h-model="name">
+            <input type="text" id="age" name="age" placeholder="年龄" h-model="age">
+            <button h-on:click="save">保存</button>
+        </div>
+        <table>
+            <thead>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </thead>
+            <tbody id="people">
+                <tr h-for="person in people" h-on:click="del">
+                    <td>{{person.name}}</td>
+                    <td>{{person.age}}</td>
+                    <td><button class="del">删除</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button h-on:click="upload">上传</button>
+        </div>
+    </div>
+</body>
+
+</html>
