@@ -24,6 +24,6 @@ input元素值改变会同步更新对应的data；
 反之，数据劫持会让新值同步更新到input元素。
 
 ## 演示地址
-[在线使用](https://www.hummingg.com/HRMS/index.html)
+[在线使用(Ctrl+F5)](https://www.hummingg.com/HRMS/index.html)
 
 [演示视频](https://www.hummingg.com/HRMS/HRMS.mp4)
